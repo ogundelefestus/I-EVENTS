@@ -1,0 +1,62 @@
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+img{
+     height: 30%;
+
+
+}
+@media (min-width: 992px){
+    .search-sec{
+       /*position:relative;*/
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+.wrapper{padding:40px; position:relative;}
+.card { width: 160px; top: 0; min-height: 65px; border-radius: 15px; z-index: 1; }
+.red { background: #d42428; }
+.yellow { background: #ffcb2c; }
+.green { background: #24ea86; }
+.card > div { padding: 50px; }
+.card > div p { color: #fff; font-size: .8em; margin-bottom: 0;text-align:center; }
+.carousel-card .carousel-inner { position: relative; overflow: visible; width: 100%; }
+.carousel-card .carousel-inner .item:first-child { left: 0; }
+.carousel-card .carousel-inner .item:nth-child(2) { left: 5px; }
+.carousel-card .carousel-inner .item:nth-child(3) { left: 10px; }
+.carousel-card .carousel-inner .item { transition-duration: 2s; display: block; position: absolute; width: 100%; }
+.carousel-card .carousel-inner .item.active { transition-duration: 2s; z-index: 9; -webkit-animation: swap 1s ease; -moz-animation: swap 1s ease; animation: swap 1s ease; }
+@-webkit-keyframes swap {
+    0% { left: 0; z-index: 0; -o-transform: rotate(0deg) scale(1); transform: rotate(0deg) scale(1); }
+    49% { left: 100px; z-index: 0; -o-transform: rotate(10deg) scale(.8); transform: rotate(10deg) scale(.8); }
+    50% { left: 100px; z-index: 9; -o-transform: rotate(10deg) scale(.8); transform: rotate(10deg) scale(.8); }
+    100% { left: 0; z-index: 9; -o-transform: rotate(0deg) scale(1); transform: rotate(0deg) scale(); }
+}
+  
