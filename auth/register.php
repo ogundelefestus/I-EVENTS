@@ -17,7 +17,7 @@ if(!empty($_SESSION['logged_in']) && $_SESSION['logged_in']==TRUE){
     if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['type']) && !empty($_POST['type']) && isset($_POST['name']) && !empty($_POST['name'])){
    
         $email=test_input($_POST['email']);
-        $password=test_input($_POST['password']);
+        $password=md5(test_input($_POST['password']));
         $name=test_input($_POST['name']);
         $type=test_input($_POST['type']);
         $phone_no=test_input($_POST['phone']);
